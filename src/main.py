@@ -17,8 +17,12 @@ def _read_text(path: Path) -> str:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Assess code quality for student submissions.")
-    parser.add_argument("--input", required=True, help="Path to folder with student subfolders.")
+    parser = argparse.ArgumentParser(
+        description="Assess code quality for student submissions."
+    )
+    parser.add_argument(
+        "--input", required=True, help="Path to folder with student subfolders."
+    )
     parser.add_argument("--out", default="out", help="Output directory for reports.")
     args = parser.parse_args()
 
@@ -55,7 +59,9 @@ def main() -> int:
         )
 
     json_report = build_json_report(results)
-    (out_dir / "report.json").write_text(json.dumps(json_report, ensure_ascii=False, indent=2), encoding="utf-8")
+    (out_dir / "report.json").write_text(
+        json.dumps(json_report, ensure_ascii=False, indent=2), encoding="utf-8"
+    )
     (out_dir / "report.md").write_text(build_markdown_report(results), encoding="utf-8")
 
     return 0

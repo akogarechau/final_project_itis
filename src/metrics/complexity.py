@@ -12,8 +12,8 @@ _BRANCH_NODES = (
     ast.Try,
     ast.With,
     ast.AsyncWith,
-    ast.BoolOp,      # and/or
-    ast.IfExp,       # ternary
+    ast.BoolOp,  # and/or
+    ast.IfExp,  # ternary
     ast.comprehension,
 )
 

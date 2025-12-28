@@ -27,7 +27,9 @@ def build_markdown_report(results: list[StudentResult]) -> str:
     lines: list[str] = []
     lines.append("# Code Quality Report")
     lines.append("")
-    lines.append("| Student | Files | Docstrings | Max complexity | Duplication | Points | Grade |")
+    lines.append(
+        "| Student | Files | Docstrings | Max complexity | Duplication | Points | Grade |"
+    )
     lines.append("|---|---:|---:|---:|---:|---:|:---:|")
 
     for r in results:

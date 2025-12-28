@@ -22,7 +22,9 @@ def score_project(
     # Docstrings
     if docstring_ratio < 0.5:
         points -= 25
-        reasons.append("Low docstring coverage (< 50%). Add docstrings to functions/classes.")
+        reasons.append(
+            "Low docstring coverage (< 50%). Add docstrings to functions/classes."
+        )
     elif docstring_ratio < 0.8:
         points -= 10
         reasons.append("Docstring coverage could be improved (50–80%).")
@@ -30,7 +32,9 @@ def score_project(
     # Complexity
     if max_complexity >= 15:
         points -= 30
-        reasons.append("High cyclomatic-like complexity (>= 15). Refactor large functions.")
+        reasons.append(
+            "High cyclomatic-like complexity (>= 15). Refactor large functions."
+        )
     elif max_complexity >= 10:
         points -= 15
         reasons.append("Moderate complexity (10–14). Consider splitting logic.")
@@ -41,7 +45,9 @@ def score_project(
         reasons.append("Noticeable code duplication (>= 15%). Extract common helpers.")
     elif duplication_ratio >= 0.07:
         points -= 10
-        reasons.append("Some code duplication (7–15%). Consider refactoring repeated blocks.")
+        reasons.append(
+            "Some code duplication (7–15%). Consider refactoring repeated blocks."
+        )
 
     points = max(0, min(100, points))
 
