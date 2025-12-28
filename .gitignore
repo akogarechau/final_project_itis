@@ -26,3 +26,5 @@ out/
 coverage.xml
 htmlcov/
 .DS_Store
+
+.DS_Store
