@@ -15,7 +15,9 @@ class DuplicationStats:
         return self.duplicated_lines / self.total_lines
 
 
-def duplication_stats_for_source(source_code: str, min_line_len: int = 12) -> DuplicationStats:
+def duplication_stats_for_source(
+    source_code: str, min_line_len: int = 12
+) -> DuplicationStats:
     lines_raw = source_code.splitlines()
     normalized: list[str] = []
     for line in lines_raw:
