@@ -112,7 +112,7 @@ This repository is intended to be used with GitHub/GitVerse Actions workflows:
 - Ensure CI passes (lint + tests) before opening a PR.
 
 ## License
-Add your license here (e.g., MIT), or keep this section until course requirements define it.
+
 
 ## Author
-Your Name (URFU / ITIS)
+Timur Sotnik (URFU/ITIS)
