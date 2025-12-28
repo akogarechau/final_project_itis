@@ -114,7 +114,7 @@ This repository is intended to be used with GitHub/GitVerse Actions workflows:
 - Ensure CI passes (lint + tests) before opening a PR.
 
 ## License
-
+This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit/). See the `LICENSE` file for details.
 
 ## Author
 Timur Sotnik (URFU/ITIS)
