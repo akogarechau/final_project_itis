@@ -106,6 +106,8 @@ This repository is intended to be used with GitHub/GitVerse Actions workflows:
 - On every push/pull request: run linting (PEP 8), formatting checks, and unit tests.
 - Optionally: run a scheduled workflow (`cron`) or a manual workflow (`workflow_dispatch`) that generates reports and uploads them as artifacts.
 
+![Tests and Code Quality](https://github.com/akogarechau/final_project_itis/actions/workflows/tests.yml/badge.svg)
+
 ## Contributing
 - Create a feature branch.
 - Add/update unit tests for new functionality.
